@@ -26,9 +26,10 @@ const PORT = process.env.PORT || 5000;
 // CORS - allows frontend to make requests from a different origin
 // Configured for both local development and production deployment
 const allowedOrigins = [
-    'http://localhost:5173',           // Local development
-    'http://localhost:3000',           // Alternative local port
-    process.env.FRONTEND_URL,          // Production frontend URL (set in Vercel)
+    'http://localhost:5173',                                      // Local development
+    'http://localhost:3000',                                      // Alternative local port
+    'https://nebs-it-frontend-shaanzeeeee-v2.vercel.app',        // Production frontend
+    process.env.FRONTEND_URL,                                     // Additional frontend URL from env
 ];
 
 app.use(cors({
